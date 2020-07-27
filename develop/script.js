@@ -15,22 +15,27 @@ $(document).ready(function() {
   });
 
   function getData() {
-    $("textarea").text(localStorage.getItem(value));
-    console.log("getData");
-  }
+    ///////$("textarea").text(localStorage.getItem(value));
+    var storageKeys = Object.keys(localStorage);
+    for(i = 0; i< storageKeys.length; i++) {
+      var retrieveTime = localStorage.getItem(storageKeys[i]);
+    $('#' + retrieveTime).children('textarea').val(storageKeys[i]);
+    
+    }
+  };
 
   function hourUpdater() {
     // get current number of hours
     var currentHour = moment().hours();
     console.log('current hour:', currentHour);
 
-    // loop over time blocks
+    // loop over time blocks. gets current hour
     $(".time-block").each(function() {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
+      var textArea = $("textarea");
 
       console.log("block hour:", blockHour);
 
-      // check if we've moved past this time
       
       // if the current hour is greater than the block hour
       // then add class "past"
@@ -40,17 +45,26 @@ $(document).ready(function() {
 
       // else
       // remove class "past", remove class "present", add class "future"
-      
+
+      if(currentHour > blockHour) {
+        $(this).addClass("past");
+      } else if (currentHour === blockHour) {
+        $(this).addClass("present");
+      } else {
+        $(this).addClass("future");
+      }
+      console.log("current > blockHour");
     });
   }
 
   hourUpdater();
+  getData();
 
   // set up interval to check if current time needs to be updated
   // which means execute hourUpdater function every 15 seconds
 
   // load any saved data from localStorage
-  
+    setInterval(hourUpdater, 15000);
 
   // display current day on page
   $("#currentDay").text(moment().format("dddd, MMMM Do"));
