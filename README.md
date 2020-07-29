@@ -33,6 +33,6 @@ Index code for creating hour blocks for our calender
 
 Main Functions including utilization of momment.js
 
-<img src="assets/dailyplannermainfunctions.png>
+<img src="assets/dailyplannermainfunctions.png">
 
 
