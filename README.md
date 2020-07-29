@@ -28,5 +28,5 @@ WHEN I refresh the page
 THEN the saved events persist
 
 Index code for creating hour blocks for our calender
-![](
+
 
