@@ -28,5 +28,9 @@ WHEN I refresh the page
 THEN the saved events persist
 
 Index code for creating hour blocks for our calender
+<img src="assets/dialyplannerindex.png">
+
+Main Functions including utilization of momment.js
+<img src="assets/dailyplannermainfunctions.png>
 
 
