@@ -27,6 +27,6 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-The following animation demonstrates the application functionality:
+Index code for creating hour blocks for our calender
+![](
 
-![day planner demo](./assets/05-third-party-apis-homework-demo.gif)
