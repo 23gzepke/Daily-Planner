@@ -29,7 +29,7 @@ THEN the saved events persist
 
 Index code for creating hour blocks for our calender
 
-## ![Sreenshot](./assets/dialyplnnerindex.png)
+## ![Sreenshot](./assets/dialyplannerindex.png)
 
 Main Functions including utilization of momment.js
 
