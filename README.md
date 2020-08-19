@@ -35,6 +35,6 @@ Main Functions including utilization of momment.js
 
 <img src="assets/dailyplannermainfunctions.png">
 
-https://23gzepke.github.io/Daily-Planner/
+## https://23gzepke.github.io/Daily-Planner/
 
 
