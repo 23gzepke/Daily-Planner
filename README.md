@@ -35,6 +35,13 @@ Main Functions including utilization of momment.js
 
 ## ![Screenshot](/assets/dailyplannermainfunctions.png)
 
+## ![Screenshot](/assets/Screenshot6.png)
+
+## Technologies used:
+* HTML
+* CSS
+*JQuery
+
 ## https://23gzepke.github.io/Daily-Planner/
 
 
